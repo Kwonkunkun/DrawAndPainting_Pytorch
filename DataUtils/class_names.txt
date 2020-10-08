@@ -1,0 +1,10 @@
+class name: airplane		number of samples: 5000
+class name: apple		number of samples: 5000
+class name: bicycle		number of samples: 5000
+class name: book		number of samples: 5000
+class name: car		number of samples: 5000
+class name: cell_phone		number of samples: 5000
+class name: eye		number of samples: 5000
+class name: eyeglasses		number of samples: 5000
+class name: smiley_face		number of samples: 5000
+class name: tree		number of samples: 5000

@@ -1,0 +1,1 @@
+{"batch_size": 256, "data_root": "Dataset", "epochs": 30, "gamma": 0.1, "image_size": 28, "learning_rate": 0.1, "log": "./", "lr_decay_step": [12, 20], "model": "resnet34", "momentum": 0.9, "ngpu": 1, "save_dir": "./Checkpoints", "test_bs": 64, "weight_decay": 0.0005}
