@@ -1,4 +1,4 @@
-env_name = "../VR_QuickDraw/Build/VR_QuickDraw"
+env_name = "../DrawAndPainting_VR/Build/DrawAndPainting_VR"
 # env_name = "C:/Users/user/Documents/GitHub/IMG_Transport_Sample/Build/IMG_Transport_Sample"  # Name of the Unity environment binary to launch
 train_mode = False  # Whether to run the environment in training or inference mode
 

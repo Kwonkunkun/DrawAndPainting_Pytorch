@@ -1,4 +1,4 @@
-env_name = "../VR_QuickDraw/Build/VR_QuickDraw"
+env_name = "../DrawAndPainting_VR/Build/DrawAndPainting_VR"
 # env_name = "C:/Users/user/Documents/GitHub/IMG_Transport_Sample/Build/IMG_Transport_Sample"  # Name of the Unity environment binary to launch
 train_mode = False  # Whether to run the environment in training or inference mode
 
@@ -24,13 +24,14 @@ import matplotlib.pyplot as plt
 import testUnityCommunication
 
 # model - resnet34
-from Model.nets import convnet
+from Model.nets import resnet34
+#from Model.nets import convnet
 
 
 if __name__ == '__main__':
     def loadCnnModel():
         #load cnn model
-        net = convnet(10)
+        net = resnet34(20)
         PATH = "./Checkpoints/model.pytorch"
         net.load_state_dict(torch.load(PATH))
         return net
