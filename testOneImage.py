@@ -95,13 +95,13 @@ if __name__ == '__main__':
 
             # image show
             plt.imshow(data, cmap="gray")
-            plt.show()
+            #plt.show()
 
             # 인식한 애 보여주기
             #print(data)
 
             # predict
-            result = PredictSingleImage(net, data)
+            result = PredictSingleImage(net, data)+1
             env_info = env.step(result)[default_brain]
             #print("env.step 실핼 IF")
 
