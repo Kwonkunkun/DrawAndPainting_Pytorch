@@ -47,7 +47,7 @@ if __name__ == '__main__':
 
         # forward
         output = net(tensorData)
-        #print(output)
+        print(output)
 
         #predict
         _,output_index = torch.max(output, 1)
@@ -77,7 +77,7 @@ if __name__ == '__main__':
         # 브레인 엑션 사이즈
         action_size = brain.vector_action_space_size
 
-        if isImgCheck:  # 이미지 인식을 할경우 (해당 이미지 번호를 유니티에 반환 1~10)
+        if isImgCheck:  # 이미지 인식을 할경우 (해당 이미지 번호를 유니티에 반환 1~20)
             net = loadCnnModel()
 
             # getImage 1 : 이미지를 불러오기
@@ -97,12 +97,13 @@ if __name__ == '__main__':
             plt.imshow(data, cmap="gray")
             plt.show()
 
+            # 인식한 애 보여주기
             #print(data)
 
             # predict
             result = PredictSingleImage(net, data)
             env_info = env.step(result)[default_brain]
-            print("env.step 실핼 IF")
+            #print("env.step 실핼 IF")
 
         else :  # 이미지 인식을 안할경우 (0을 반환 )
             env_info = env.step(0)[default_brain]
